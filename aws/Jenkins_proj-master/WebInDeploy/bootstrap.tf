@@ -29,7 +29,7 @@ resource "aws_s3_bucket_object" "bootstrap_xml" {
   source     = "bootstrap/bootstrap.xml"
 }
 
-resource "aws_s3_bucket_object" "init-cft_txt" {
+resource "aws_s3_bucket_object" "init-cfg_txt" {
   bucket     = "sec-frame-jenkins-${lower(random_id.bucket_prefix.hex)}"
   depends_on = ["aws_s3_bucket.bootstrap_bucket"]
   acl        = "private"
