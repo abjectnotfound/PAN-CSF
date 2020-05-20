@@ -81,7 +81,7 @@ variables:
 # in the 'variables' section.
 snippets:
   - name: script
-    file: ../../deploy-v2.py
+    file: ../../deploy.py
 #    output_type: json
 #    outputs:
 #      - name: web_in_deploy_status
